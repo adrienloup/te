@@ -1,0 +1,17 @@
+@mixin fonts {
+  --font-text: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-icon: "Material-Symbols", sans-serif;
+}
+
+@mixin colors {
+  --color-default-1: #ffffffde;
+  --color-default-2: #242424;
+  --color-primary: #00c48d;
+  --color-secondary: #108775;
+}
+
+:root {
+  @include fonts();
+  @include colors();
+}
