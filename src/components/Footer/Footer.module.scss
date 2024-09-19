@@ -1,0 +1,18 @@
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  background-color: var(--color-2);
+  border-top: 0.25rem solid var(--color-4);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 90rem;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}

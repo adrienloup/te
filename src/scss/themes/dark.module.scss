@@ -1,13 +1,14 @@
 @mixin if-dark {
-  ._dark_1em0m_3 {
+  ._dark_1mm2m_3 {
     @content;
   }
 }
 
 @mixin dark {
-  --color-1: var(--neutral-color-2);
-  --color-2: var(--neutral-color-1);
-  --color-3: var(--solid-color-10);
+  --color-1: var(--color-default-2);
+  --color-2: var(--color-default-1);
+  --color-3: var(--color-neutral-2);
+  --color-4: var(--color-neutral-1);
 }
 
 :root {

@@ -3,9 +3,10 @@
 }
 
 @mixin light {
-  --color-1: var(--neutral-color-1);
-  --color-2: var(--neutral-color-2);
-  --color-3: var(--pastel-color-6);
+  --color-1: var(--color-default-1);
+  --color-2: var(--color-default-2);
+  --color-3: var(--color-default-1);
+  --color-4: var(--color-neutral-3);
 }
 
 :root {

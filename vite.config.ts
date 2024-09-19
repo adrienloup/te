@@ -40,5 +40,13 @@ export default defineConfig({
       },
     }),
   ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ['legacy-js-api'],
+        additionalData: '@use "./src/scss/base/breakpoints" as *;',
+      },
+    },
+  },
   base: '/te',
 });

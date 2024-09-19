@@ -1,0 +1,81 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 5rem;
+  background-color: var(--color-2);
+  border-bottom: 0.25rem solid var(--color-4);
+
+  @include tablet-landscape {
+    height: 3rem;
+  }
+}
+
+.inner {
+  display: flex;
+  max-width: 90rem;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.navigation {
+  flex: 1;
+
+  @include tablet-landscape {
+    display: none;
+  }
+}
+
+.link,
+.button,
+.name {
+  background-color: transparent;
+
+  &:focus-visible {
+    outline-offset: -0.5rem;
+  }
+
+  &:hover {
+    background-color: var(--color-4);
+  }
+}
+
+.link,
+.button {
+  padding: 0 1rem;
+  color: var(--color-3);
+
+  &:hover {
+    color: var(--color-solid-2);
+  }
+}
+
+.link {
+  border-right: 0.25rem solid var(--color-4);
+  text-align: center;
+}
+
+.button {
+  gap: 0.5rem;
+  margin-left: auto;
+  border-left: 0.25rem solid var(--color-4);
+}
+
+.name {
+  padding: 1rem;
+  border-right: 0.25rem solid var(--color-4);
+
+  @include tablet-landscape {
+    flex: 1;
+    padding: 0.5rem;
+    border: 0;
+  }
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.svg {
+  height: 100%;
+}

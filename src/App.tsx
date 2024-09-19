@@ -1,19 +1,21 @@
-import { useState } from 'react';
-import teLogo from '/te.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import CustomerAccount from './pages/CustomerAccount/CustomerAccount';
+import ElectricityAndGas from './pages/ElectricityAndGas/ElectricityAndGas';
+import ElectricVehicles from './pages/ElectricVehicles/ElectricVehicles';
+import Home from './pages/Home/Home';
 import './App.scss';
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      <img src={teLogo} className="logo" alt="Vite logo" />
-
-      <h1>te</h1>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/te/customer-account" element={<CustomerAccount />} />
+        <Route path="/te/electricity-and-gas" element={<ElectricityAndGas />} />
+        <Route path="/te/electric-vehicles" element={<ElectricVehicles />} />
+        <Route path="/te" element={<Home />} />
+        <Route path="/te/*" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

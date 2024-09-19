@@ -1,17 +1,29 @@
 @mixin fonts {
-  --font-text: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-icon: "Material-Symbols", sans-serif;
+  --font-text: Futura, 'Trebuchet MS', Arial, sans-serif;
+  --font-icon: 'Material-Symbols', sans-serif;
 }
 
 @mixin colors {
-  --color-default-1: #ffffffde;
-  --color-default-2: #242424;
-  --color-primary: #00c48d;
-  --color-secondary: #108775;
+  --color-default-1: #242424;
+  --color-default-2: #fff;
+  --color-neutral-1: #2b2b2b;
+  --color-neutral-2: #ffffffde;
+  --color-neutral-3: #eee;
+  --color-solid-1: #ff0100;
+  --color-solid-2: #0053ff;
+  --color-solid-3: #05ff00;
+  --color-solid-4: #ffe700;
+  --color-mast-1: #c70000;
+  --color-mast-2: #0045ce;
+}
+
+@mixin easings {
+  --ease-quad: cubic-bezier(0.43, 0.195, 0.02, 1);
+  --ease-expo: cubic-bezier(0.85, 0, 0.15, 1);
 }
 
 :root {
   @include fonts();
   @include colors();
+  @include easings();
 }
