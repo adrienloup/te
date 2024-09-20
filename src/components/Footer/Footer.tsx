@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useLanguage } from '../../hooks/useLanguage';
 import { useTheme } from '../../hooks/useTheme';
 import { version } from '../../../package.json';
@@ -7,6 +8,7 @@ import { Icon } from '../Icon/Icon';
 import styles from './Footer.module.scss';
 
 export const Footer = () => {
+  const { t } = useTranslation();
   const { language, setLanguage } = useLanguage();
   const { theme, setTheme } = useTheme();
 
@@ -18,31 +20,37 @@ export const Footer = () => {
       <div className={styles.inner}>
         <Tooltip
           className={styles.tooltip}
-          label={`Mode ${theme === 'dark' ? 'clair' : 'sombre'}`}
+          label={
+            theme === 'dark' ? t('generic.mode_light') : t('generic.mode_dark')
+          }
           position="top-start"
-          onClick={toggleTheme}
           onKeyDown={toggleTheme}
         >
-          <Button className={styles.button} tabIndex={-1} onClick={toggleTheme}>
+          <Button
+            className={styles.button}
+            variant="secondary"
+            tabIndex={-1}
+            onClick={toggleTheme}
+          >
             <Icon
               className={styles.icon}
-              icon={theme === 'dark' ? 'dark_mode' : 'light_mode'}
+              icon={theme === 'dark' ? 'light_mode' : 'dark_mode'}
             />
           </Button>
         </Tooltip>
         <Tooltip
           className={styles.tooltip}
-          label={`Langue ${language === 'fr' ? 'anglaise' : 'française'}`}
+          label={t('generic.language')}
           position="top-start"
-          onClick={toggleLanguage}
           onKeyDown={toggleLanguage}
         >
           <Button
             className={styles.button}
+            variant="secondary"
             tabIndex={-1}
             onClick={toggleLanguage}
           >
-            {language === 'fr' ? 'FR' : 'EN'}
+            {language === 'fr' ? 'EN' : 'FR'}
           </Button>
         </Tooltip>
         <div className={styles.version}>&copy; TE {version}</div>

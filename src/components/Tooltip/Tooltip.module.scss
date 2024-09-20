@@ -1,7 +1,6 @@
 .tooltip {
   position: relative;
   display: inline-flex;
-  cursor: pointer;
 
   &:focus {
     outline: none;
@@ -82,5 +81,4 @@
 
 .label {
   text-transform: uppercase;
-  color: var(--color-solid-2);
 }

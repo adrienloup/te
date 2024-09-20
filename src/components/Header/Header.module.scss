@@ -26,65 +26,57 @@
   }
 }
 
-.link,
-.button,
-.name {
-  background-color: transparent;
+// .link,
+// .button,
+// .name {
+//   background-color: transparent;
 
-  &:focus-visible {
-    outline-offset: -0.5rem;
-  }
+//   &:focus-visible {
+//     outline-offset: -0.5rem;
+//   }
 
-  &:hover {
-    background-color: var(--color-4);
-  }
-}
+//   &:hover {
+//     background-color: var(--color-4);
+//   }
+// }
 
-.link,
-.button {
-  padding: 0 1rem;
-  color: var(--color-3);
+// .link,
+// .button {
+//   padding: 0 1rem;
+//   color: var(--color-3);
 
-  &:hover {
-    color: var(--color-solid-2);
-  }
-}
+//   &:hover {
+//     color: var(--color-solid-2);
+//   }
+// }
 
-.link {
-  border-right: 0.25rem solid var(--color-4);
-  text-align: center;
-}
+// .link {
+//   border-right: 0.25rem solid var(--color-4);
+//   text-align: center;
+// }
 
-.button {
-  gap: 0.5rem;
-  margin-left: auto;
-  border-right: 0.25rem solid var(--color-4);
-  border-left: 0.25rem solid var(--color-4);
+// .button {
+//   gap: 0.5rem;
+//   margin-left: auto;
+//   border-right: 0.25rem solid var(--color-4);
+//   border-left: 0.25rem solid var(--color-4);
+// }
 
-  @include desktop {
-    border-right: none;
-  }
-}
+// .name {
+//   padding: 1rem;
+//   border-right: 0.25rem solid var(--color-4);
+//   border-left: 0.25rem solid var(--color-4);
 
-.name {
-  padding: 1rem;
-  border-right: 0.25rem solid var(--color-4);
-  border-left: 0.25rem solid var(--color-4);
+//   @include tablet-landscape {
+//     flex: 1;
+//     padding: 0.5rem;
+//     border: 0;
+//   }
+// }
 
-  @include desktop {
-    border-left: none;
-  }
-
-  @include tablet-landscape {
-    flex: 1;
-    padding: 0.5rem;
-    border: 0;
-  }
-}
-
-.icon {
-  font-size: 2rem;
-}
+// .icon {
+//   font-size: 2rem;
+// }
 
 .svg {
   height: 100%;

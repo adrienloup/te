@@ -3,11 +3,13 @@
   "private": true,
   "version": "1.2.3",
   "type": "module",
+  "author": "Adrien Loup",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "cy:open": "npx cypress open"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -18,7 +20,9 @@
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
+    "cypress": "^13.14.2",
     "eslint": "^9.9.0",
+    "eslint-plugin-cypress": "^3.5.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
     "eslint-plugin-react-refresh": "^0.4.9",
     "globals": "^15.9.0",

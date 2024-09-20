@@ -1,4 +1,9 @@
 {
+  "generic": {
+    "mode_light": "Light mode",
+    "mode_dark": "Dark mode",
+    "language": "French language"
+  },
   "page": {
     "customer_account": {
       "title": "Welcome to your electricity and gas customer area",

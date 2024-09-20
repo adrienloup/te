@@ -6,12 +6,14 @@ import styles from './Button.module.scss';
 type Attr<E> = ButtonHTMLAttributes<E> & LinkHTMLAttributes<E>;
 
 interface ButtonProps extends Attr<HTMLButtonElement & HTMLAnchorElement> {
+  variant?: 'primary' | 'secondary';
   href?: string;
   to?: string;
   onClick?: () => void;
 }
 
 export const Button = ({
+  variant = 'primary',
   href,
   to,
   onClick,
@@ -22,7 +24,7 @@ export const Button = ({
   const link = (
     <Link
       to={to!}
-      className={classNames([styles.button, className])}
+      className={classNames([styles.button, styles[variant], className])}
       {...props}
     >
       {children}
@@ -34,7 +36,7 @@ export const Button = ({
       href={href}
       target="_blank"
       rel="noopener"
-      className={classNames([styles.button, className])}
+      className={classNames([styles.button, styles[variant], className])}
       {...props}
     >
       {children}
@@ -44,7 +46,7 @@ export const Button = ({
   const button = (
     <button
       onClick={onClick}
-      className={classNames([styles.button, className])}
+      className={classNames([styles.button, styles[variant], className])}
       {...props}
     >
       {children}

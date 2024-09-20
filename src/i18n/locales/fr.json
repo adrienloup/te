@@ -1,4 +1,9 @@
 {
+  "generic": {
+    "mode_light": "Mode clair",
+    "mode_dark": "Mode sombre",
+    "language": "Langue anglaise"
+  },
   "page": {
     "customer_account": {
       "title": "Bienvenue dans votre espace client électricité et gaz",

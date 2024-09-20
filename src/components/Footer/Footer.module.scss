@@ -12,42 +12,15 @@
 }
 
 .tooltip {
-  &:nth-child(1) {
-    .button {
-      border-left: 0.25rem solid var(--color-4);
-
-      @include desktop {
-        border-left: none;
-      }
-    }
-  }
-
   &:nth-child(2) {
     .button {
       border-right: 0.25rem solid var(--color-4);
-      border-left: 0.25rem solid var(--color-4);
     }
   }
 }
 
 .button {
-  gap: 0.5rem;
-  padding: 0 1rem;
-  background-color: transparent;
-  color: var(--color-3);
-
-  &:focus-visible {
-    outline-offset: -0.5rem;
-  }
-
-  &:hover {
-    background-color: var(--color-4);
-    color: var(--color-solid-2);
-  }
-}
-
-.icon {
-  font-size: 2rem;
+  border-left: 0.25rem solid var(--color-4);
 }
 
 .version {

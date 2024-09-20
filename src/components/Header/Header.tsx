@@ -10,7 +10,7 @@ export const Header = () => {
   return (
     <header className={styles.header} role="banner">
       <div className={styles.inner}>
-        <Button className={styles.name} to="/te">
+        <Button className={styles.name} variant="secondary" to="/te">
           <svg
             className={styles.svg}
             xmlns="http://www.w3.org/2000/svg"
@@ -45,13 +45,25 @@ export const Header = () => {
           </svg>
         </Button>
         <Navigation className={styles.navigation}>
-          <Button className={styles.link} to="/te/electricity-and-gas">
+          <Button
+            className={styles.link}
+            variant="secondary"
+            to="/te/electricity-and-gas"
+          >
             {t('page.electricity_and_gas.sort_title')}
           </Button>
-          <Button className={styles.link} to="/te/electric-vehicles">
+          <Button
+            className={styles.link}
+            variant="secondary"
+            to="/te/electric-vehicles"
+          >
             {t('page.electric_vehicles.sort_title')}
           </Button>
-          <Button className={styles.button} to="/te/customer-account">
+          <Button
+            className={styles.button}
+            variant="secondary"
+            to="/te/customer-account"
+          >
             <Icon className={styles.icon} icon="account_circle" />
             {t('page.customer_account.sort_title')}
           </Button>

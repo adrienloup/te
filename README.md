@@ -35,3 +35,10 @@ npm run preview
 npm run lint
 npm run lint:fix
 ```
+
+## Checking Code Tests
+
+```bash
+npm run cy
+npm run cy:open
+```
