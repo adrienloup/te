@@ -1,26 +1,38 @@
+import { lazy, Suspense } from 'react';
+import { useTranslation } from 'react-i18next';
+import { delayFallback } from '../../utils/delayFallback';
 import { useTitle } from '../../hooks/useTitle';
-import { useTheme } from '../../hooks/useTheme';
 import { Page } from '../../layouts/Page';
-import { Button } from '../../components/Button/Button';
-import styles from './CustomerAccount.module.scss';
+import { Loader } from '../../components/Loader/Loader';
+import { Grid } from '../../components/Grid/Grid';
+
+const ElectricitySheet = lazy(() =>
+  delayFallback(
+    import('../../components/ElectricitySheet/ElectricitySheet'),
+    2e3
+  )
+);
+
+const GasSheet = lazy(() =>
+  delayFallback(import('../../components/GasSheet/GasSheet'), 1e3)
+);
 
 function CustomerAccount() {
-  useTitle('Espace client');
+  const { t } = useTranslation();
 
-  const { theme, setTheme } = useTheme();
+  useTitle(t('page.customer_account.sort_title'));
 
   return (
     <Page>
-      <h1>Espace client</h1>
-      <div>
-        <Button className={styles.button} onClick={() => setTheme('light')}>
-          light ({theme})
-        </Button>
-        <Button className={styles.button} onClick={() => setTheme('dark')}>
-          dark ({theme})
-        </Button>
-      </div>
-      <div style={{ height: '2000px' }}></div>
+      <h1>{t('page.customer_account.title')}</h1>
+      <Grid>
+        <Suspense fallback={<Loader />}>
+          <ElectricitySheet />
+        </Suspense>
+        <Suspense fallback={<Loader />}>
+          <GasSheet />
+        </Suspense>
+      </Grid>
     </Page>
   );
 }

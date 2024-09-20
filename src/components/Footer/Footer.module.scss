@@ -1,18 +1,58 @@
 .footer {
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  height: 3rem;
+  height: 4rem;
   background-color: var(--color-2);
   border-top: 0.25rem solid var(--color-4);
 }
 
 .inner {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
   max-width: 90rem;
   height: 100%;
   margin: 0 auto;
+}
+
+.tooltip {
+  &:nth-child(1) {
+    .button {
+      border-left: 0.25rem solid var(--color-4);
+
+      @include desktop {
+        border-left: none;
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .button {
+      border-right: 0.25rem solid var(--color-4);
+      border-left: 0.25rem solid var(--color-4);
+    }
+  }
+}
+
+.button {
+  gap: 0.5rem;
   padding: 0 1rem;
+  background-color: transparent;
+  color: var(--color-3);
+
+  &:focus-visible {
+    outline-offset: -0.5rem;
+  }
+
+  &:hover {
+    background-color: var(--color-4);
+    color: var(--color-solid-2);
+  }
+}
+
+.icon {
+  font-size: 2rem;
+}
+
+.version {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding-right: 1rem;
 }

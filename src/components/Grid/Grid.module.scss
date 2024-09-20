@@ -1,0 +1,12 @@
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+
+  @include tablet-landscape {
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

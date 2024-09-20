@@ -1,9 +1,12 @@
+import { useTranslation } from 'react-i18next';
 import { Navigation } from '../Navigation/Navigation';
 import { Button } from '../Button/Button';
 import { Icon } from '../Icon/Icon';
 import styles from './Header.module.scss';
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header} role="banner">
       <div className={styles.inner}>
@@ -43,14 +46,14 @@ export const Header = () => {
         </Button>
         <Navigation className={styles.navigation}>
           <Button className={styles.link} to="/te/electricity-and-gas">
-            Électricité et Gaz
+            {t('page.electricity_and_gas.sort_title')}
           </Button>
           <Button className={styles.link} to="/te/electric-vehicles">
-            Véhicules électriques
+            {t('page.electric_vehicles.sort_title')}
           </Button>
           <Button className={styles.button} to="/te/customer-account">
             <Icon className={styles.icon} icon="account_circle" />
-            Espace client
+            {t('page.customer_account.sort_title')}
           </Button>
         </Navigation>
       </div>

@@ -5,6 +5,7 @@ import {
   FunctionComponent,
   ReactNode,
 } from 'react';
+import { LanguageProvider } from '../contexts/LanguageContext';
 import { ThemeProvider } from '../contexts/ThemeContext';
 
 type ProvidersType = [
@@ -24,4 +25,4 @@ const combineProviders = (providers: ProvidersType) =>
   );
 
 export const AllProviders: FunctionComponent<{ children: ReactNode }> =
-  combineProviders([[ThemeProvider]]);
+  combineProviders([[LanguageProvider], [ThemeProvider]]);

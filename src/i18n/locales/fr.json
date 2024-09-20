@@ -1,0 +1,18 @@
+{
+  "page": {
+    "customer_account": {
+      "title": "Bienvenue dans votre espace client électricité et gaz",
+      "sort_title": "Espace client"
+    },
+    "electricity_and_gas": {
+      "sort_title": "Électricité et Gaz"
+    },
+    "electric_vehicles": {
+      "sort_title": "Véhicules électriques"
+    },
+    "home": {
+      "title": "Électricité et gaz faites des économies dès aujourd'hui !",
+      "sort_title": "Fournisseur d'énergie"
+    }
+  }
+}

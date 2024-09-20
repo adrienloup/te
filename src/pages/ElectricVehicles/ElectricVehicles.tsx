@@ -1,12 +1,15 @@
+import { useTranslation } from 'react-i18next';
 import { useTitle } from '../../hooks/useTitle';
 import { Page } from '../../layouts/Page';
 
 function ElectricVehicles() {
-  useTitle('Véhicules électriques');
+  const { t } = useTranslation();
+
+  useTitle(t('page.electric_vehicles.sort_title'));
 
   return (
     <Page>
-      <h1>Véhicules électriques</h1>
+      <h1>{t('page.electric_vehicles.sort_title')}</h1>
     </Page>
   );
 }

@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { AllProviders } from './utils/AllProviders.tsx';
 import { version } from '../package.json';
 import App from './App.tsx';
+import './i18n';
 
 console.log(
   `%c[TE]%c${version}%c@jff`,
