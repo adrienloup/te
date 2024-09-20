@@ -24,7 +24,7 @@ export const Tooltip = ({
       tabIndex={0}
       className={classNames([
         styles.tooltip,
-        onClick() ? styles.pointer : '',
+        onClick()! ? styles.pointer : '',
         className,
       ])}
       onClick={onClick}
