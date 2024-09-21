@@ -1,0 +1,1 @@
+import{j as e}from"./index-APrXO--u.js";const c="_sheet_vlpvq_1",a={sheet:c},h=({children:s})=>e.jsx("div",{className:a.sheet,children:s}),n={"technical-value":"_technical-value_jed7j_1"},i=({label:s,value:t})=>e.jsxs("div",{className:n["technical-value"],children:[e.jsx("span",{children:s}),e.jsx("span",{children:t})]});export{h as S,i as T};
