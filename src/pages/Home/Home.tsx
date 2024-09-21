@@ -3,6 +3,8 @@ import { useTitle } from '../../hooks/useTitle';
 import { useLanguage } from '../../hooks/useLanguage';
 import { useTheme } from '../../hooks/useTheme';
 import { Page } from '../../layouts/Page';
+import { Article } from '../../components/Article/Article';
+import { Banner } from '../../components/Banner/Banner';
 import { Button } from '../../components/Button/Button';
 
 function Home() {
@@ -14,15 +16,18 @@ function Home() {
 
   return (
     <Page>
-      <h1>{t('page.home.title')}</h1>
-      <div>
-        <Button onClick={() => setTheme('light')}>light ({theme})</Button>
-        <Button onClick={() => setTheme('dark')}>dark ({theme})</Button>
-      </div>
-      <div>
-        <Button onClick={() => setLanguage('en')}>EN ({language})</Button>
-        <Button onClick={() => setLanguage('fr')}>FR ({language})</Button>
-      </div>
+      <Banner content={t('banner.promo')}></Banner>
+      <Article>
+        <h1>{t('page.home.title')}</h1>
+        <div>
+          <Button onClick={() => setTheme('light')}>light ({theme})</Button>
+          <Button onClick={() => setTheme('dark')}>dark ({theme})</Button>
+        </div>
+        <div>
+          <Button onClick={() => setLanguage('en')}>EN ({language})</Button>
+          <Button onClick={() => setLanguage('fr')}>FR ({language})</Button>
+        </div>
+      </Article>
     </Page>
   );
 }

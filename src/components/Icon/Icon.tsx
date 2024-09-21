@@ -1,8 +1,8 @@
-import { HTMLProps } from 'react';
 import { classNames } from '../../utils/classNames';
+import { PropType } from '../../models/Prop';
 import styles from './Icon.module.scss';
 
-interface IconProps extends HTMLProps<HTMLElement> {
+interface IconProps extends PropType {
   icon: string;
 }
 

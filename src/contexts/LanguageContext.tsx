@@ -1,7 +1,8 @@
-import { createContext, ReactNode, useEffect } from 'react';
+import { createContext, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { LanguageType } from '../models/Language';
+import { SlotType } from '../models/Slot';
 
 export const LanguageContext = createContext<{
   language: LanguageType;
@@ -11,11 +12,11 @@ export const LanguageContext = createContext<{
   setLanguage: (language: LanguageType) => language,
 });
 
-export function LanguageProvider({ children }: { children: ReactNode }) {
+export function LanguageProvider({ children }: { children: SlotType }) {
   const { i18n } = useTranslation();
-  const [language, setLanguage] = useLocalStorage(
+  const [language, setLanguage] = useLocalStorage<LanguageType>(
     '_lcc_1em0m_3_language',
-    'en' as LanguageType
+    'en'
   );
 
   useEffect(() => {

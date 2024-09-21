@@ -1,10 +1,10 @@
-import { ReactNode } from 'react';
+import { SlotType } from '../../models/Slot';
 import styles from './Main.module.scss';
 
-export const Main = ({ children }: { children: ReactNode }) => {
+export const Main = ({ children }: { children: SlotType }) => {
   return (
     <main className={styles.main} role="main">
-      <div className={styles.inner}>{children}</div>
+      {children}
     </main>
   );
 };

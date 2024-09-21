@@ -1,8 +1,8 @@
-import { HTMLProps } from 'react';
 import { classNames } from '../../utils/classNames';
+import { PropType } from '../../models/Prop';
 import styles from './Loader.module.scss';
 
-interface loaderProps extends Omit<HTMLProps<HTMLElement>, 'size'> {
+interface loaderProps extends Omit<PropType, 'size'> {
   size?: 'medium' | 'large';
 }
 

@@ -2,23 +2,3 @@
   flex: 1;
   background-color: var(--color-2);
 }
-
-.inner {
-  max-width: 90rem;
-  margin: 0 auto;
-  padding: 2rem;
-
-  @include tablet-landscape {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    color: var(--color-solid-2);
-  }
-
-  h2 {
-    font-size: 1.5rem;
-    color: var(--color-solid-2);
-  }
-}

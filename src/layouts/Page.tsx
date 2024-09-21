@@ -1,9 +1,9 @@
-import { ReactNode } from 'react';
+import { SlotType } from '../models/Slot';
 import { Header } from '../components/Header/Header';
 import { Main } from '../components/Main/Main';
 import { Footer } from '../components/Footer/Footer';
 
-export const Page = ({ children }: { children: ReactNode }) => {
+export const Page = ({ children }: { children: SlotType }) => {
   return (
     <>
       <Header />

@@ -1,8 +1,12 @@
 {
   "generic": {
-    "mode_light": "Mode clair",
-    "mode_dark": "Mode sombre",
+    "light": "Mode clair",
+    "dark": "Mode sombre",
     "language": "Langue anglaise"
+  },
+  "banner": {
+    "promo": "<p>Pour les 100 ans, 100 euros offerts en souscrivant une offre d'électricité, <a href='https://www.google.com/' target='_blank' rel='noopener'>j'en profite !</a></p>",
+    "benefit": "<p>Vous êtes un particulier et déménagez prochainement ? Profitez de nos avantages exclusifs dédiés à nos clients déménageurs !</p>"
   },
   "page": {
     "customer_account": {
@@ -18,6 +22,12 @@
     "home": {
       "title": "Électricité et gaz faites des économies dès aujourd'hui !",
       "sort_title": "Fournisseur d'énergie"
+    },
+    "login": {
+      "sort_title": "Connectez-vous"
+    },
+    "register": {
+      "sort_title": "Inscrivez-vous"
     }
   }
 }

@@ -1,6 +1,7 @@
-import { createContext, ReactNode, useEffect } from 'react';
+import { createContext, useEffect } from 'react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 import { ThemeType } from '../models/Theme';
+import { SlotType } from '../models/Slot';
 
 export const ThemeContext = createContext<{
   theme: ThemeType;
@@ -10,10 +11,10 @@ export const ThemeContext = createContext<{
   setTheme: (theme: ThemeType) => theme,
 });
 
-export function ThemeProvider({ children }: { children: ReactNode }) {
-  const [theme, setTheme] = useLocalStorage(
+export function ThemeProvider({ children }: { children: SlotType }) {
+  const [theme, setTheme] = useLocalStorage<ThemeType>(
     '_te_1mm2m_3_theme',
-    'light' as ThemeType
+    'light'
   );
 
   useEffect(() => {

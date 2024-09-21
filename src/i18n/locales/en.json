@@ -1,8 +1,12 @@
 {
   "generic": {
-    "mode_light": "Light mode",
-    "mode_dark": "Dark mode",
+    "light": "Light mode",
+    "dark": "Dark mode",
     "language": "French language"
+  },
+  "banner": {
+    "promo": "<p>For 100 years, 100 euros offered when subscribing to an electricity offer, <a href='https://www.google.com/' target='_blank' rel='noopener'>I'll take it!</a></p>",
+    "benefit": "<p>Are you an individual and moving soon? Take advantage of our exclusive advantages dedicated to our moving customers!</p>"
   },
   "page": {
     "customer_account": {
@@ -18,6 +22,12 @@
     "home": {
       "title": "Electricity and gas save money today!",
       "sort_title": "Energy supplier"
+    },
+    "login": {
+      "sort_title": "Sign In"
+    },
+    "register": {
+      "sort_title": "Sign Up"
     }
   }
 }

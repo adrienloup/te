@@ -1,18 +1,18 @@
-import { HTMLProps } from 'react';
 import { classNames } from '../../utils/classNames';
+import { PropType } from '../../models/Prop';
 import { PositionType } from '../../models/Position';
 import styles from './Tooltip.module.scss';
 
-interface TooltipProps extends HTMLProps<HTMLElement> {
+interface TooltipProps extends PropType {
   label: string;
   position?: PositionType;
-  onKeyDown?: () => void;
+  onClick?: () => void;
 }
 
 export const Tooltip = ({
   label,
   position = 'top',
-  onKeyDown = () => {},
+  onClick = () => {},
   children,
   className,
 }: TooltipProps) => {
@@ -21,8 +21,9 @@ export const Tooltip = ({
       role="tooltip"
       tabIndex={0}
       className={classNames([styles.tooltip, className])}
+      onClick={onClick}
       onKeyDown={(e) =>
-        e.code === 'Enter' || e.code === 'Space' ? onKeyDown() : undefined
+        e.code === 'Enter' || e.code === 'Space' ? onClick() : undefined
       }
     >
       {children}

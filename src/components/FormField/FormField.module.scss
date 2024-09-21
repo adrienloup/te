@@ -1,0 +1,19 @@
+.formfield {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.25rem;
+}
+
+.message,
+.helper {
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.message {
+  color: var(--color-solid-1);
+}
