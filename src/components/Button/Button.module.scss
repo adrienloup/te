@@ -8,7 +8,6 @@
   text-decoration: none;
   font-family: var(--font-text);
   font-weight: bold;
-  font-size: 1.25rem;
   cursor: pointer;
 
   &:disabled {
@@ -21,10 +20,10 @@
 }
 
 .primary {
-  height: 4rem;
-  padding: 0 1.5rem;
+  padding: 1.75rem;
   background-color: var(--color-solid-2);
-  border-radius: 2rem;
+  border-radius: 2.75rem;
+  font-size: 1.25rem;
   color: var(--color-default-2);
 
   &:hover {
@@ -35,6 +34,7 @@
 .secondary {
   padding: 1rem;
   background-color: transparent;
+  font-size: 1.25rem;
   color: var(--color-3);
 
   &:focus-visible {

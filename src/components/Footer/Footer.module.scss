@@ -9,18 +9,6 @@
   margin: 0 auto;
 }
 
-.tooltip {
-  &:nth-child(2) {
-    .button {
-      border-right: 0.25rem solid var(--color-4);
-    }
-  }
-}
-
-.button {
-  border-left: 0.25rem solid var(--color-4);
-}
-
 .version {
   display: flex;
   align-items: center;

@@ -8,20 +8,20 @@ export const UserContext = createContext<{
   setUser: (user: userType) => void;
 }>({
   user: {
-    id: 0,
-    name: '',
+    id: '',
     email: '',
     password: '',
+    connected: false,
   },
   setUser: (user: userType) => user,
 });
 
 export function UserProvider({ children }: { children: SlotType }) {
   const [user, setUser] = useLocalStorage<userType>('_lcc_1em0m_3_user', {
-    id: 0,
-    name: '',
+    id: '',
     email: '',
     password: '',
+    connected: false,
   });
 
   return (

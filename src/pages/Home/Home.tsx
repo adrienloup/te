@@ -6,6 +6,7 @@ import { Page } from '../../layouts/Page';
 import { Article } from '../../components/Article/Article';
 import { Banner } from '../../components/Banner/Banner';
 import { Button } from '../../components/Button/Button';
+import styles from './Home.module.scss';
 
 function Home() {
   const { t } = useTranslation();
@@ -16,9 +17,8 @@ function Home() {
 
   return (
     <Page>
-      <Banner content={t('banner.promo')}></Banner>
       <Article>
-        <h1>{t('page.home.title')}</h1>
+        <h1 data-cy="title">{t('page.home.title')}</h1>
         <div>
           <Button onClick={() => setTheme('light')}>light ({theme})</Button>
           <Button onClick={() => setTheme('dark')}>dark ({theme})</Button>
@@ -28,6 +28,7 @@ function Home() {
           <Button onClick={() => setLanguage('fr')}>FR ({language})</Button>
         </div>
       </Article>
+      <Banner className={styles.banner} content={t('banner.promo')}></Banner>
     </Page>
   );
 }

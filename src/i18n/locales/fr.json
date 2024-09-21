@@ -1,13 +1,4 @@
 {
-  "generic": {
-    "light": "Mode clair",
-    "dark": "Mode sombre",
-    "language": "Langue anglaise"
-  },
-  "banner": {
-    "promo": "<p>Pour les 100 ans, 100 euros offerts en souscrivant une offre d'électricité, <a href='https://www.google.com/' target='_blank' rel='noopener'>j'en profite !</a></p>",
-    "benefit": "<p>Vous êtes un particulier et déménagez prochainement ? Profitez de nos avantages exclusifs dédiés à nos clients déménageurs !</p>"
-  },
   "page": {
     "customer_account": {
       "title": "Bienvenue dans votre espace client électricité et gaz",
@@ -29,5 +20,35 @@
     "register": {
       "sort_title": "Inscrivez-vous"
     }
+  },
+  "banner": {
+    "promo": "<p>Pour les 100 ans, 100 euros offerts en souscrivant une offre d'électricité, <a href='https://www.google.com/' target='_blank' rel='noopener'>j'en profite !</a></p>",
+    "benefit": "<p>Vous êtes un particulier et déménagez prochainement ?</p><p>Profitez de nos avantages exclusifs dédiés à nos clients déménageurs !</p><p>Rendez-vous sur votre espace client ou par téléphone pour en savoir plus.</p>"
+  },
+  "form": {
+    "legend": "Tous les champs sont obligatoires",
+    "email": "Votre couriel",
+    "password": "Votre mot de passe",
+    "confirm": "Confirmez votre mot de passe",
+    "message": {
+      "email": "Votre courriel doit être de type xx@xx.xx",
+      "password": "Votre mot de passe doit être composé de 3 à 10 caractères alphanumérique",
+      "confirm": "Votre mot de passe doit être identique"
+    }
+  },
+  "button": {
+    "register": "Je m'inscris",
+    "login": "Je me connecte",
+    "logout": "Je me déconnecte"
+  },
+  "alert": {
+    "create": "Votre compte est créé",
+    "connection": "Vous êtes connecté",
+    "disconnection": "Vous êtes déconnecté"
+  },
+  "tooltip": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "language": "Langue anglaise"
   }
 }

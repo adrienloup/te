@@ -20,11 +20,11 @@ export const Footer = () => {
       <div className={styles.inner}>
         <Tooltip
           className={styles.tooltip}
-          label={theme === 'dark' ? t('generic.light') : t('generic.dark')}
+          label={theme === 'dark' ? t('tooltip.light') : t('tooltip.dark')}
           position="top-start"
           onClick={toggleTheme}
         >
-          <Button className={styles.button} variant="secondary" tabIndex={-1}>
+          <Button variant="secondary" tabIndex={-1}>
             <Icon
               className={styles.icon}
               icon={theme === 'dark' ? 'light_mode' : 'dark_mode'}
@@ -33,11 +33,11 @@ export const Footer = () => {
         </Tooltip>
         <Tooltip
           className={styles.tooltip}
-          label={t('generic.language')}
+          label={t('tooltip.language')}
           position="top-start"
           onClick={toggleLanguage}
         >
-          <Button className={styles.button} variant="secondary" tabIndex={-1}>
+          <Button variant="secondary" tabIndex={-1}>
             {language === 'fr' ? 'EN' : 'FR'}
           </Button>
         </Tooltip>

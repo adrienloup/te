@@ -1,4 +1,4 @@
-export function delayFallback<T>(promise: Promise<T>, duration: number) {
+export function delayFallback<P>(promise: Promise<P>, duration: number) {
   return new Promise((resolve) => {
     setTimeout(resolve, duration);
   }).then(() => promise);

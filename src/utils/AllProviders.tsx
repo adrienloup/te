@@ -4,11 +4,11 @@ import {
   ElementType,
   FunctionComponent,
 } from 'react';
-import { SlotType } from '../models/Slot';
+import { AlertProvider } from '../contexts/AlertContext';
 import { LanguageProvider } from '../contexts/LanguageContext';
 import { ThemeProvider } from '../contexts/ThemeContext';
-import { AuthProvider } from '../contexts/AuthContext';
 import { UserProvider } from '../contexts/UserContext';
+import { SlotType } from '../models/Slot';
 
 type ProvidersType = [
   ComponentType<{ children: SlotType }>,
@@ -28,8 +28,8 @@ const combineProviders = (providers: ProvidersType) =>
 
 export const AllProviders: FunctionComponent<{ children: SlotType }> =
   combineProviders([
+    [AlertProvider],
     [LanguageProvider],
     [ThemeProvider],
-    [AuthProvider],
     [UserProvider],
   ]);

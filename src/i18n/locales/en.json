@@ -1,13 +1,4 @@
 {
-  "generic": {
-    "light": "Light mode",
-    "dark": "Dark mode",
-    "language": "French language"
-  },
-  "banner": {
-    "promo": "<p>For 100 years, 100 euros offered when subscribing to an electricity offer, <a href='https://www.google.com/' target='_blank' rel='noopener'>I'll take it!</a></p>",
-    "benefit": "<p>Are you an individual and moving soon? Take advantage of our exclusive advantages dedicated to our moving customers!</p>"
-  },
   "page": {
     "customer_account": {
       "title": "Welcome to your electricity and gas customer area",
@@ -29,5 +20,35 @@
     "register": {
       "sort_title": "Sign Up"
     }
+  },
+  "banner": {
+    "promo": "<p>For 100 years, 100 euros offered when subscribing to an electricity offer, <a href='https://www.google.com/' target='_blank' rel='noopener'>I'll take it!</a></p>",
+    "benefit": "<p>Are you an individual and moving soon?</p><p>Take advantage of our exclusive advantages dedicated to our moving customers!</p><p>Go to your customer area or by telephone to find out more .</p>"
+  },
+  "form": {
+    "legend": "All fields are required",
+    "email": "Your email",
+    "password": "Your password",
+    "confirm": "Confirm your password",
+    "message": {
+      "email": "Your email must be type xx@xx.xx",
+      "password": "Your password must be 3 to 10 alphanumeric characters",
+      "confirm": "Your password must be the same"
+    }
+  },
+  "button": {
+    "register": "I register",
+    "login": "I connect",
+    "logout": "I disconnect"
+  },
+  "alert": {
+    "create": "Your account is created",
+    "connection": "You are connected",
+    "disconnection": "You are disconnected"
+  },
+  "tooltip": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "language": "French language"
   }
 }

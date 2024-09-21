@@ -1,0 +1,13 @@
+.title {
+  max-width: 40rem;
+  margin: 1rem auto 3rem;
+  text-align: center;
+
+  @include tablet-landscape {
+    margin: 0 auto 0.75em;
+  }
+}
+
+.banner {
+  margin-top: auto;
+}
